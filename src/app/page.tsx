@@ -14,17 +14,17 @@ import workButton from '../imgs/homepage/work.png'
 import contactButton from '../imgs/homepage/contact.png'
 
 // Spinning PNGs
-import spinningPng1 from '../imgs/homepage/char3_col.png';
-import spinningPng2 from '../imgs/homepage/char4_col.png';
-import spinningPng3 from '../imgs/homepage/char5_col.png';
+import spinningPng1 from '../imgs/homepage/char3_col.png'
+import spinningPng2 from '../imgs/homepage/char4_col.png'
+import spinningPng3 from '../imgs/homepage/char5_col.png'
 const spinningPngs = [spinningPng1, spinningPng2, spinningPng3];
 
 // Background PNGs
-import char1 from '../imgs/homepage/char1_col.png';
-import char2 from '../imgs/homepage/char2_col.png';
-import char3 from '../imgs/homepage/char3_col.png';
-import char4 from '../imgs/homepage/char4_col.png';
-import char5 from '../imgs/homepage/char5_col.png';
+import char1 from '../imgs/homepage/char1_col.png'
+import char2 from '../imgs/homepage/char2_col.png'
+import char3 from '../imgs/homepage/char3_col.png'
+import char4 from '../imgs/homepage/char4_col.png'
+import char5 from '../imgs/homepage/char5_col.png'
 const backgroundPngs = [char1, char2, char3, char4, char5];
 
 // Interfaces
