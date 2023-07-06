@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 
 // Images
 import maximVerheul from '../imgs/homepage/mv_logo.png'
-import background from '../imgs/background_1.png'
+import background from '../imgs/background_2.png'
 import sideBg from '../imgs/homepage/side_left.png'
 
 // Buttons

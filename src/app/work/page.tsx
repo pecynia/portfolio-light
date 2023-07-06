@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-
 // Import intro image
 import introSidePicLeftCharacter from '../../imgs/lookbook/edited/Lookbook clogs.png'
 
@@ -81,7 +80,7 @@ const productData = [
 
 export default function Work() {
   return (
-    <div className='max-w-3xl mx-auto font-lexendDeca items-center '>
+    <div className='max-w-6xl mx-auto font-lexendDeca items-center '>
 
       {/* Intro image, also brings the client back to home page when clicked */}
       <div className="lg:hidden inline-flex absolute left-0 z-10 hover:cursor-pointer mt-12">
@@ -106,7 +105,7 @@ export default function Work() {
       </div>
 
       {/* Designer name and show name, center */}
-      <div className="justify-center ml-20 -mt-10">
+      <div className="justify-center ml-20 lg:ml-72 -mt-10">
         <Image 
           src={designerNameAndShowName} 
           alt="Designer name and show name" 
@@ -122,8 +121,8 @@ export default function Work() {
               src={product.image}
               alt={`Product ${product.id}`}
               layout="responsive"
-              width={1000}
-              height={1000}
+              width={2000}
+              height={2000}
             />
           </div>
         ))}
@@ -137,7 +136,7 @@ export default function Work() {
 
         <div className="">
           <Image src={clothingImage} alt="Clothing" className='mx-auto'/>
-          <Image src={accessoriesImage} alt="Accessories" className='mx-auto ml-10'
+          <Image src={accessoriesImage} alt="Accessories" className='mx-auto ml-10 lg:ml-32'
           width={1000}/>
         </div>
         
