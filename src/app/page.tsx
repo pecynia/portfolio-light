@@ -64,7 +64,7 @@ export default function Home() {
     const chars: BackgroundCharacter[] = [];
     
     const sections = 10; // divide the y-axis into 5 sections
-    const sectionHeight = 75 / sections; // height of each section, between 20% and 70%
+    const sectionHeight = 55 / sections; // height of each section, between 20% and 70%
   
     for (let i = 0; i < 4; i++) { // Generate 10 random characters
       const section = Math.floor(Math.random() * sections); // randomly choose a section for the y-coordinate
@@ -73,7 +73,7 @@ export default function Home() {
         id: i,
         png: backgroundPngs[Math.floor(Math.random() * backgroundPngs.length)],
         x: 9 + (i % 5) * 19, // distribute horizontally with a gap
-        y: 20 + section * sectionHeight + Math.random() * sectionHeight, // randomly distribute within a section
+        y: 35 + section * sectionHeight + Math.random() * sectionHeight, // randomly distribute within a section
       };
       chars.push(char);
     }
