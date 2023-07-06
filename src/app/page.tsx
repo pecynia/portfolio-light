@@ -160,21 +160,21 @@ export default function Home() {
         <div className='flex flex-col items-center justify-center min-h-screen'>
           
           {/* Work */}
-          <div className='hover:cursor-pointer hover:scale-110 hover:-rotate-12 transform transition mt-72 duration-500 ml-40 lg:ml-56'>
+          <div className='hover:cursor-pointer hover:scale-110 hover:-rotate-12 transform transition mt-80 duration-500 ml-40 lg:ml-56'>
             <Link href='/work'>
               <Image src={workButton} alt='Work' width={350} />
             </Link>
           </div>
 
           {/* Me */}
-          <div className='hover:cursor-pointer hover:scale-110 hover:rotate-12 transform transition duration-500 -ml-40 lg:-ml-96'>
+          <div className='hover:cursor-pointer hover:scale-110 hover:rotate-12 -mt-12 transform transition duration-500 -ml-40 lg:-ml-96'>
             <Link href='/me'>
               <Image src={meButton} alt='Me' width={250} />
             </Link>
           </div>
 
           {/* Contact */}
-          <div className='hover:cursor-pointer hover:scale-110 hover:rotate-12 transform transition duration-500 ml-40 lg:ml-56'>
+          <div className='hover:cursor-pointer hover:scale-110 hover:rotate-12 -mt-20 transform transition duration-500 ml-40 lg:ml-56'>
             <Link href='/contact'>
               <Image src={contactButton} alt='Contact' width={350} />
             </Link>
