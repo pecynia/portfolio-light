@@ -101,7 +101,7 @@ export default function Home() {
               src={maximVerheul}
               alt='Maxim Verheul'
               className='rounded-full mt-56 lg:mt-96'
-              width={650}
+              width={600}
             />
           </div>
 
@@ -122,7 +122,7 @@ export default function Home() {
         </div>
 
         {/* Left Side background */}
-        <div className="transform absolute bottom-0 left-0 w-10 h-full z-10"
+        <div className="transform absolute bottom-0 left-2 w-10 h-full z-10"
             style={{ 
                 backgroundImage: `url(${sideBg.src})`,
                 backgroundRepeat: 'repeat',
@@ -131,7 +131,7 @@ export default function Home() {
         />
 
         {/* Right Side background */}
-        <div className="transform absolute bottom-0 right-0 w-10 h-full z-10"
+        <div className="transform absolute bottom-0 right-2 w-10 h-full z-10"
             style={{ 
                 backgroundImage: `url(${sideBg.src})`,
                 backgroundRepeat: 'repeat',
@@ -159,24 +159,24 @@ export default function Home() {
         {/* Buttons, use min-h-screen*/}
         <div className='flex flex-col items-center justify-center min-h-screen'>
           
-          {/* Me */}
-          <div className='hover:cursor-pointer hover:scale-110 hover:rotate-12 transform transition duration-500 -ml-40 lg:-ml-96'>
-            <Link href='/me'>
-              <Image src={meButton} alt='Me' width={200} height={200} />
+          {/* Work */}
+          <div className='hover:cursor-pointer hover:scale-110 hover:-rotate-12 transform transition mt-72 duration-500 ml-40 lg:ml-56'>
+            <Link href='/work'>
+              <Image src={workButton} alt='Work' width={350} />
             </Link>
           </div>
 
-          {/* Work */}
-          <div className='hover:cursor-pointer hover:scale-110 hover:-rotate-12 transform transition duration-500 ml-40 lg:ml-96'>
-            <Link href='/work'>
-              <Image src={workButton} alt='Work' width={200} height={200} />
+          {/* Me */}
+          <div className='hover:cursor-pointer hover:scale-110 hover:rotate-12 transform transition duration-500 -ml-40 lg:-ml-96'>
+            <Link href='/me'>
+              <Image src={meButton} alt='Me' width={250} />
             </Link>
           </div>
 
           {/* Contact */}
-          <div className='hover:cursor-pointer hover:scale-110 hover:rotate-12 transform transition duration-500 -ml-40 lg:-ml-80'>
+          <div className='hover:cursor-pointer hover:scale-110 hover:rotate-12 transform transition duration-500 ml-40 lg:ml-56'>
             <Link href='/contact'>
-              <Image src={contactButton} alt='Contact' width={200} height={200} />
+              <Image src={contactButton} alt='Contact' width={350} />
             </Link>
           </div>
 
