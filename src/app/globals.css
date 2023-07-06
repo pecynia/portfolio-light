@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;500;600;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,7 +19,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +27,25 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+@keyframes spin-out {
+  0% {
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    filter: hue-rotate(0deg);	
+    opacity: 1;
+  }
+  100% {
+    top: var(--random-y);
+    left: var(--random-x);
+    transform: scale(0) rotate(360deg);
+    filter: hue-rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-spin-out {
+  animation: spin-out 1.5s ease-out forwards;
 }

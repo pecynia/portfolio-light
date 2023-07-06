@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        spaceGrotesk: "'Space Grotesk', sans-serif",
+        lexendDeca: "'Lexend Deca', sans-serif",
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
