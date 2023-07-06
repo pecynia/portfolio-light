@@ -9,40 +9,71 @@ const businesscards = [businessCard1, businessCard2, businessCard3, businessCard
 // Back button
 import introSidePicLeftCharacter from '../../imgs/lookbook/edited/Lookbook clogs.png'
 import Link from 'next/link'
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 
 export default function Contact() {
   // Array of business cards
   const businessCards = [businessCard1, businessCard2, businessCard3, businessCard4, businessCard5];
 
-  // Function to select a random business card
-  const randomBusinessCard = businessCards[Math.floor(Math.random() * businessCards.length)];
+  // Function to select 3 random business cards for small screens
+  const randomBusinessCards: StaticImageData[] = [];
+  while(randomBusinessCards.length < 3){
+    let randomCard = businessCards[Math.floor(Math.random() * businessCards.length)];
+    if(!randomBusinessCards.includes(randomCard)){
+      randomBusinessCards.push(randomCard);
+    }
+  }
 
   return (
     <div className="relative md:items-center">
 
-      {/* Home button */}
-      <div className="inline-flex absolute left-0 z-20 hover:cursor-pointer mt-12">
+      {/* Intro image, also brings the client back to home page when clicked */}
+      <div className="lg:hidden inline-flex absolute left-0 z-10 hover:cursor-pointer -mt-20">
         <Link href="/">
           <Image 
             src={introSidePicLeftCharacter} 
-            alt="Home button" 
-            width={150}
+            alt="Intro image" 
+            width={80}
+            className=''
+          />
+        </Link>
+      </div>
+      <div className="hidden lg:inline-flex absolute left-0 z-10 hover:cursor-pointer mt-10">
+        <Link href="/">
+          <Image 
+            src={introSidePicLeftCharacter} 
+            alt="Intro image" 
+            width={200}
             className=''
           />
         </Link>
       </div>
 
-      {/* Business card */}
-      <div className="relative flex justify-center items-center min-h-screen">
+      {/* Business card for larger screens */}
+      <div className="hidden md:flex relative justify-center items-center min-h-screen">
         <Image
-          src={randomBusinessCard}
+          src={businessCards[Math.floor(Math.random() * businessCards.length)]}
           alt="Business Card"
           layout="responsive"
           className="max-w-3xl"
         />
       </div>
+
+      {/* Business cards for small screens */}
+      <div className="md:hidden flex flex-col mt-20 justify-center items-center">
+        {randomBusinessCards.map((card, index) => (
+          <div key={index} className="my-2">
+            <Image
+              src={card}
+              alt="Business Card"
+              layout="responsive"
+              className="max-w-3xl"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
+
