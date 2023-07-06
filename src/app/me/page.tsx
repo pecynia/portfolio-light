@@ -41,7 +41,7 @@ export default function Me() {
         <p className="text-xl mt-6">
           Hi.
           <br />
-          I'm a 22 year old product designer from ArteZ University of the Arts.
+          I am a 22 year old product designer from ArteZ University of the Arts.
           <br />
 
           This is for big screen
@@ -54,7 +54,7 @@ export default function Me() {
         <p className="text-xl mt-56 mx-auto">
             Hi.
             <br />
-            I'm a 22 year old product designer from ArteZ University of the Arts.
+            I am a 22 year old product designer from ArteZ University of the Arts.
             <br />
 
             This is for small screen
